@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uy narxini taxmin qilish</title>
+</head>
+<style>
+    input {
+    border: none;
+    background-color: white;
+    resize: none;
+    outline: none;
+}
+
+form{
+background: #f1f1f1;
+border-radius: 15px;
+color:black ;
+width: 400px;
+margin:0 auto
+
+}
+h1{
+color: white;
+text-align: center;
+}
+
+body {
+background-image: radial-gradient(blue, black);
+background-size: auto;
+background-repeat: no-repeat;
+background-size: 2000px 800px;
+}
+</style>
+
+<body>
+
+    <h1>Uyning narxini bashorat qilish</h1>
+    <hr>
+    <br><br>
+    <form action="result" >
+        <br><br>
+        <pr>&nbsp;&nbsp;&nbsp;Xonalar soni:&nbsp;&nbsp;&nbsp;</pr><input type="number"  name ="Term" required><br><br>
+        <pr>&nbsp;&nbsp;&nbsp;Uy maydoni:&nbsp;&nbsp;&nbsp;</pr><input type="number" step="0.01" name ="ProsperScore" required><br> <br>
+        <pr>&nbsp;&nbsp;&nbsp;Qavati:&nbsp;&nbsp;&nbsp;</pr><input type="number"  name ="Occupation" required><br> <br>
+        <pr>&nbsp;&nbsp;&nbsp;Qavatlar soni:&nbsp;&nbsp;&nbsp;</pr><input type="number" step="0.01" name ="EmploymentStatusDuration" required><br><br>
+        <pr>&nbsp;&nbsp;&nbsp;</pr><label for="Joylashuv">Joylashuv:</label>
+        <pr>&nbsp;&nbsp;&nbsp;</pr><input list="Joylashuv" name="Joylashuv" id="Emp">
+        <datalist id="Joylashuv">
+        <option value="Бектемирский">
+        <option value="Мирабадский">
+        <option value="Мирзо-Улугбекский">
+        <option value="Олмазорский">
+        <option value="Сергелийский">
+        <option value="Учтепинский">
+        <option value="Чиланзарский">
+        <option value="Шайхантахурский">
+        <option value="Юнусабадский">
+        <option value="Яккасарайский">
+        <option value="Янгихаётский">
+        <option value="Яшнободский">
+        </datalist>        
+        <br><br>
+        <input type="submit" value="Bashorat" style=" background-color: #DC3B18;
+            border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+   border-radius: 10px;
+   margin-left: 120px !important;">
+
+    </form>
+</body>
+</html>
